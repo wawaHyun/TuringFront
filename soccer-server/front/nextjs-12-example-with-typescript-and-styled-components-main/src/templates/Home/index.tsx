@@ -4,10 +4,18 @@ import { instance } from 'config/axios-config';
 
 function Home() {
 
+<<<<<<< HEAD
   const clickButtonHandler = (e: any) => {
     instance().get(`/${e.target.value}`)
       .then((res: any) => { alert(JSON.stringify(res)) })
       .catch((error: any) => { alert(JSON.stringify(error)) })
+=======
+  const clickButtonHandler = (e:any) => {
+    instance().get(`/${e.target.value}`)
+    .then((res:any) => { alert(JSON.stringify(res)) })
+    .catch((error:any) => { alert(JSON.stringify(error)) })
+
+>>>>>>> bkh
   }
 
   const question = [
