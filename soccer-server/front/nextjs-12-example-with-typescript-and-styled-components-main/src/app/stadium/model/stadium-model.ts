@@ -9,17 +9,7 @@ export default interface StadiumModel {
     ddd?: string
     tel?: string
 
-<<<<<<< HEAD
     // private List<Schedule> schedules?: string
     // private List<Team> teams?: string
 
-
-=======
-<<<<<<< HEAD
-    // private List<Schedule> schedules?: string
-    // private List<Team> teams?: string
-
-=======
->>>>>>> bkh
->>>>>>> jgs
 }
