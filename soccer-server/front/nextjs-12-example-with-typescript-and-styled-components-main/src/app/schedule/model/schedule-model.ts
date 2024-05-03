@@ -1,5 +1,6 @@
 
 export default interface ScheduleModel{
+
     id?: number
     scheDate?: string
     gubun?: string
@@ -7,5 +8,10 @@ export default interface ScheduleModel{
     awayteamId?: string
     homeScore?: number
     awayScore?: number
+
+
+    //  Stadium stadiumId ?: string
+    // private Stadium stadiumId?: string
+
 
 }

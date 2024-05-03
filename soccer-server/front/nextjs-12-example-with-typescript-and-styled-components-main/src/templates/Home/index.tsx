@@ -9,6 +9,7 @@ function Home() {
     .then((res:any) => { alert(JSON.stringify(res)) })
     .catch((error:any) => { alert(JSON.stringify(error)) })
 
+
   }
 
   const question = [

@@ -1,4 +1,5 @@
 export default interface PlayerModel {
+
     id?: number
     playerId?: string
     playerName?: string
@@ -12,5 +13,8 @@ export default interface PlayerModel {
     solar?: string
     height?: string
     weight?: string
+
+
+    // Team teamId?: string
 
 }
