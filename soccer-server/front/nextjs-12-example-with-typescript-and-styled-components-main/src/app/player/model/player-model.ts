@@ -1,5 +1,12 @@
 export default interface PlayerModel {
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bkh
+>>>>>>> jgs
     id?: number
     playerId?: string
     playerName?: string
@@ -14,7 +21,15 @@ export default interface PlayerModel {
     height?: string
     weight?: string
 
+<<<<<<< HEAD
 
     // Team teamId?: string
 
+=======
+<<<<<<< HEAD
+    // Team teamId?: string
+
+=======
+>>>>>>> bkh
+>>>>>>> jgs
 }
