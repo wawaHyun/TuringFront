@@ -2,28 +2,21 @@ import { getAllTeamsDsl } from 'app/api/team/service/team-service';
 import axios from 'axios';
 import { Heading } from 'components/Heading';
 import { instance } from 'config/axios-config';
-<<<<<<< HEAD
-import { Router, useRouter } from 'next/router';
-=======
 import { useRouter } from 'next/router';
->>>>>>> jgs
+
 
 function Home() {
   const router = useRouter();
 
   const clickButtonHandler = (e:any) => {
-<<<<<<< HEAD
     // instance().get(`/${e.target.value}`)
     // .then((res:any) => { alert(JSON.stringify(res)) })
     // .catch((error:any) => { alert(JSON.stringify(error)) })
     console.log('id 값 : '+e.target.value)
-    router.push(`/team`)
-    router.push('/player')   
-=======
-    alert('test'+e.target.value)
-    router.push('/Stadium')
+    // router.push(`/team`)
+    // router.push('/player')   
+    // router.push('/Stadium')
   }
->>>>>>> jgs
 
   const question = [
     ["119", "test Dsl."],
@@ -67,18 +60,14 @@ function Home() {
         {question.map((row: any, index:number) => <tr key={index}>
           <td>{row[0]}</td>
           <td>{row[1]}</td>
-<<<<<<< HEAD
           <td><button value={row[0]} onClick={clickButtonHandler}>답 {row[0]}</button></td>
           {/* <td className='px-6'><button value={row[1]} >답</button></td> */}
-=======
-          <td><button value={row[0]} onClick={clickButtonHandler}>답</button></td>
->>>>>>> jgs
         </tr>)}
       </tbody>
     </table>
 
   </>;
 }
-}
+
 
 export default Home;

@@ -20,8 +20,7 @@ const PlayerPage: NextPage = ({ data }: any) => {
     return <PlayerList />
     
 
-    
-    
+
 }
 
 
