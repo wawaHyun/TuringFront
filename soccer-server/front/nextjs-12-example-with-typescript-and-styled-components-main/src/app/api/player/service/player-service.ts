@@ -11,5 +11,3 @@ export const getNo2Dsl = async () => {
     )
     return data
 }
-
-jdkajgkjag
