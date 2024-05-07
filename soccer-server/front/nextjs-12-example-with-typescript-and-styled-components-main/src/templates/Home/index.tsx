@@ -1,16 +1,22 @@
+import { getAllTeamsDsl } from 'app/api/team/service/team-service';
 import axios from 'axios';
 import { Heading } from 'components/Heading';
 import { instance } from 'config/axios-config';
+import { Router, useRouter } from 'next/router';
 
 function Home() {
+  const router = useRouter();
 
   const clickButtonHandler = (e:any) => {
-    instance().get(`/${e.target.value}`)
-    .then((res:any) => { alert(JSON.stringify(res)) })
-    .catch((error:any) => { alert(JSON.stringify(error)) })
+    // instance().get(`/${e.target.value}`)
+    // .then((res:any) => { alert(JSON.stringify(res)) })
+    // .catch((error:any) => { alert(JSON.stringify(error)) })
+    console.log('id 값 : '+e.target.value)
+    router.push(`/team`)
   }
 
   const question = [
+    ["119", "test Dsl."],
     ["1", "전체 축구팀 목록을 팀이름 오름차순으로 출력하시오."],
     ["2", "플레이어의 포지션 종류를 나열하시오."],
     ["3", "플레이어의 포지션 종류를 나열하시오. 단 중복은 제거하고, 포지션이 없으면 '신입' 으로 기재하시오.	"],
@@ -48,11 +54,11 @@ function Home() {
         </tr>
       </thead>
       <tbody>
-        {question.map((row: any) => <tr>
+        {question.map((row: any, index:number) => <tr key={index}>
           <td>{row[0]}</td>
           <td>{row[1]}</td>
-          <td><button value={row[0]} onClick={clickButtonHandler}>답</button></td>
-          <td><button value={row[0]} >답</button></td>
+          <td><button value={row[0]} onClick={clickButtonHandler}>답 {row[0]}</button></td>
+          {/* <td className='px-6'><button value={row[1]} >답</button></td> */}
         </tr>)}
       </tbody>
     </table>
