@@ -1,13 +1,14 @@
 import axios from 'axios';
 import { Heading } from 'components/Heading';
 import { instance } from 'config/axios-config';
+import { useRouter } from 'next/router';
 
 function Home() {
+ const router = useRouter();
 
   const clickButtonHandler = (e:any) => {
-    instance().get(`/${e.target.value}`)
-    .then((res:any) => { alert(JSON.stringify(res)) })
-    .catch((error:any) => { alert(JSON.stringify(error)) })
+  router.push('/player')   
+
   }
 
   const question = [
@@ -52,7 +53,6 @@ function Home() {
           <td>{row[0]}</td>
           <td>{row[1]}</td>
           <td><button value={row[0]} onClick={clickButtonHandler}>답</button></td>
-          <td><button value={row[0]} >답</button></td>
         </tr>)}
       </tbody>
     </table>

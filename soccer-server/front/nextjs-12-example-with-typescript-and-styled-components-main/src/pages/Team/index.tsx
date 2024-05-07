@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import TeamList from "../../app/team/module/team-list";
 import axios from "axios";
 
 // interface Props{data : {title:string};}
@@ -9,6 +8,7 @@ import {
     QueryClientProvider,
     useQuery,
 } from '@tanstack/react-query'
+import TeamList from "app/api/team/module/team-list";
 
 const TeamPage: NextPage = ({ data }: any) => {
 
