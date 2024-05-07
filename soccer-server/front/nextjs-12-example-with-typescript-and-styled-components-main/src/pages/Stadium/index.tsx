@@ -4,7 +4,7 @@ import {
     QueryClientProvider,
     useQuery,
 } from '@tanstack/react-query'
-import StadiumList from "app/stadium/module/stadium-list";
+import StadiumList from "app/api/stadium/module/stadium-list";
 
 
 const StadiumPage:NextPage = ({data} : any) => {

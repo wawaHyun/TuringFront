@@ -1,7 +1,6 @@
+
 import { API_TEAMS } from "app/com/config/prefix"
 import axios from "axios"
-
-
 
 export const getAllTeamsDslKey = ['getAllTeamsDslKey']
 export const getAllTeamsDsl = async () => {
@@ -59,5 +58,6 @@ export const getNo21DslKey = ['getNo21Dsl']
 export const getNo21Dsl = async () => {
     const { data } = await axios.get(`${API_TEAMS}/search`,
         { params: { q: '21', position: '', regionName1:'',regionName2:'' } })
+
     return data
 }

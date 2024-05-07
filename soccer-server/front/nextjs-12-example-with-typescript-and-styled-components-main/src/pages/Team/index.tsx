@@ -3,6 +3,7 @@ import axios from "axios";
 import { QueryClient, QueryClientProvider, useQuery, } from '@tanstack/react-query'
 import { getAllTeamsDsl, getAllTeamsDslKey } from "app/api/team/service/team-service";
 import { useEffect } from "react";
+
 import TeamList from "app/api/team/module/team-list";
 
 const TeamPage: NextPage = ({ data }: any) => {

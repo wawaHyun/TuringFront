@@ -13,7 +13,7 @@ function Home() {
     // .catch((error:any) => { alert(JSON.stringify(error)) })
     console.log('id 값 : '+e.target.value)
     router.push(`/team`)
-  }
+    router.push('/player')   
 
   const question = [
     ["119", "test Dsl."],
@@ -64,6 +64,7 @@ function Home() {
     </table>
 
   </>;
+}
 }
 
 export default Home;
