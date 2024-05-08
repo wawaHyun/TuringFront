@@ -91,7 +91,7 @@ function Header() {
         <span className="sr-only">Open user menu</span>
         <img className="w-8 h-8 rounded-full" src="/public/img/images.png" alt="user photo" />
       </button>}
-      {showProfile &&
+      {!showProfile &&
         <div className="flex px-4 py-3 float-end">
           <span className="block text-sm text-gray-900 dark:text-white">{decodeData.username}</span>
           <span className="block text-sm  text-gray-500 truncate dark:text-gray-400 mx-5" onClick={myPageHandler}>마이페이지</span>

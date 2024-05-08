@@ -13,7 +13,7 @@ function Home() {
     // .then((res:any) => { alert(JSON.stringify(res)) })
     // .catch((error:any) => { alert(JSON.stringify(error)) })
     console.log('id 값 : '+e.target.value)
-    // router.push(`/team`)
+    router.push(`/team`)
     // router.push('/player')   
     // router.push('/Stadium')
   }

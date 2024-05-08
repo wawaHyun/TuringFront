@@ -51,7 +51,7 @@ const ArticleListPage: NextPage = (props:any) => {
             },
           },
         }}
-        pageSizeOptions={[5]}
+        // pageSizeOptions={[5,10,15,20]}
         checkboxSelection
         disableRowSelectionOnClick
       />}
