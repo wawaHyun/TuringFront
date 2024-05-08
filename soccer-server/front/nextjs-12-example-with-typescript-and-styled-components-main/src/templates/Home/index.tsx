@@ -15,7 +15,7 @@ function Home() {
     console.log('id 값 : '+e.target.value)
     // router.push(`/team`)
     // router.push('/player')   
-    // router.push('/Stadium')
+    router.push('/Stadium')
   }
 
   const question = [
